@@ -29,10 +29,11 @@ anaconda::env{test2:}
 # Install packages into root env
 anaconda::package{dnspython: }
 
-# Install some packages into env test2
+# Install packages into env test2
 anaconda::package{dnspython: env => "test2" }
 
 # The env test2 is a dependency when installing packages into it
+# Install a number of packages into test2
 anaconda::env{test2:}
 anaconda::package{[dnspython,rope, py]: 
     env => "test2"
