@@ -1,0 +1,9 @@
+name 'anaconda'
+version '0.0.1'
+author 'Bradley Kreider'
+summary 'Manages Continuum Analytics' Anaconda python'
+description 'Installs, configures, Anaconda and conda packages'
+license 'See License.txt'
+project_page ''
+dependency ''
+
