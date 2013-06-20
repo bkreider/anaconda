@@ -23,7 +23,7 @@ anaconda::env{test1:
 }
 
 # Create env named test2 - /opt/anaconda/envs/test2
-# Use python in /opt/anaconda/envs/bin/python
+# Use python in /opt/anaconda/envs/test2/bin/python
 anaconda::env{test2:}  
 
 # Install packages into root env
