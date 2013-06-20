@@ -4,7 +4,7 @@ class anaconda::install {
 
     # Bug fix: the require will force a download even if it doesn't have to be installed
     exec { "install_anaconda":
-        command => "sh /tmp/${anaconda::params::installer} -b -p /opt/anaconda",
+        command => "bash /tmp/${anaconda::params::installer} -b -p /opt/anaconda",
         creates => "/opt/anaconda",
         require => Exec["download_anaconda"],
     }
