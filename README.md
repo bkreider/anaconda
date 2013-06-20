@@ -4,12 +4,13 @@ Anaconda Puppet Module
 Puppet module for installing anaconda, managing environments, and installing conda packages.
 
 ## Usage
+(Testing on OS X and Ubuntu)
 
 Git clone this repo into your puppet modules directory.  Then you can test it using the snippet below in a file
 and running `puppet apply`. 
 
 
-test2.pp
+File: test2.pp
 ```puppet
 # Install anaconda into /opt/anaconda
 include anaconda
@@ -41,7 +42,7 @@ anaconda::package{[dnspython,rope, py]:
 
 Run using this command where --modulepath points to the directory where you have installed this puppet module:
 ```
-puppet apply test2.pp --modulepath=modules
+puppet apply modules/anaconda/test2.pp --modulepath=modules
 ```
 
 ### Anaconda class
