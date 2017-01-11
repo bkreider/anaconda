@@ -1,5 +1,5 @@
 class anaconda::params {
-    
+
     $base_url = $::domain ? {
       #'atx.continuum.io'=>"http://filer.atx.continuum.io/released/1.5.0",
       default           =>"http://repo.continuum.io/archive",
