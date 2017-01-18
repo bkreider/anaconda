@@ -27,6 +27,6 @@ define anaconda::package( $env=undef, $base_path='/opt/anaconda') {
         
         # Ugly way to check if package is already installed
         # bug: conda list returns 0 no matter what so we grep output
-        onlyif  => "${conda} list ${env_option} ${name} | grep -q 'no packages matching'",
+        unless  => "${conda} list ${env_option} ${name} | grep -q -w -i '${name}'",
     }
 }
